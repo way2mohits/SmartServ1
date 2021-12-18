@@ -26,6 +26,4 @@ app.get('/',async function(req,res){
   
   res.render('index.ejs',{data:productsByPopularity});
 });
-app.listen(3000,function(){
-    console.log("Server Started");
-})
+app.listen(process.env.PORT || 5000)
